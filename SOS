@@ -1,0 +1,56 @@
+int buttonState;
+int buttonPin = 2;
+int ledPin =13;
+
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  
+  buttonState = digitalRead(buttonPin);
+  
+  if ( buttonState == HIGH){
+    digitalWrite(ledPin, HIGH);
+     delay(250);
+    digitalWrite(ledPin, LOW);
+     delay(250);
+   digitalWrite(ledPin, HIGH);
+     delay(250);
+    digitalWrite(ledPin, LOW);
+     delay(250);
+   digitalWrite(ledPin, HIGH);
+     delay(250);
+    digitalWrite(ledPin, LOW);
+     delay(250);
+    
+    digitalWrite(ledPin, HIGH);
+  	 delay(1250);
+    digitalWrite(ledPin, LOW);
+  	 delay(1000);
+    digitalWrite(ledPin, HIGH);
+  	 delay(1250);
+    digitalWrite(ledPin, LOW);
+  	 delay(1000);
+  	digitalWrite(ledPin, HIGH);
+  	 delay(1250);
+    digitalWrite(ledPin, LOW);
+  	 delay(1000);
+    
+    digitalWrite(ledPin, HIGH);
+     delay(250);
+    digitalWrite(ledPin, LOW);
+     delay(250);
+  	digitalWrite(ledPin, HIGH);
+     delay(250);
+    digitalWrite(ledPin, LOW);
+     delay(250);
+  	digitalWrite(ledPin, HIGH);
+     delay(250);
+    digitalWrite(ledPin, LOW);
+     delay(250);
+  
+  }
+}
